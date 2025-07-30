@@ -41,9 +41,7 @@
 
   <body>
     <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm"
-    >
+    <nav class="navbar navbar-expand-lg shadow-sm">
       <div class="container">
         <a class="navbar-brand fw-bold text-primary-emphasis" href="#"></a>
         <button
@@ -80,7 +78,9 @@
     <header class="bg-light text-center" id="home">
       <div class="container">
         <h1 class="display-4 text-primary-emphasis fw-bold">Hi!</h1>
-        <h2 class="display-5 text-primary-emphasis">I am Sampada Kambagi</h2>
+        <h2 class="display-5 text-primary-emphasis">
+          I am <span id="typed-text"></span>
+        </h2>
       </div>
     </header>
 
@@ -101,7 +101,7 @@
 
         <div class="mb-3">
           <h5 class="mb-1">Master of Computer Applications</h5>
-          <p class="mb-0 text-muted">
+          <p class="mb-0">
             KLE Institution of Technology, VTU | Oct 2021 - Oct 2023
           </p>
           <ul>
@@ -115,7 +115,7 @@
 
         <div>
           <h5 class="mb-1">Bachelor of Computer Applications</h5>
-          <p class="mb-0 text-muted">
+          <p class="mb-0">
             KLE's BCA P C Jabin Science College | June 2018 - Sep 2021
           </p>
           <ul>
@@ -187,10 +187,6 @@
             Bangalore, Karnataka
           </li>
           <li>
-            <i class="bi bi-phone-fill text-primary-emphasis"></i> +91
-            9480715426
-          </li>
-          <li>
             <i class="bi bi-envelope-fill me-2 text-primary-emphasis"></i>
             sampadakambagi@gmail.com
           </li>
@@ -210,6 +206,16 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed("#typed-text", {
+        strings: ["Sampada Kambagi"],
+        typeSpeed: 60,
+        showCursor: true,
+        loop: false,
+        backSpeed: 0,
+      });
     </script>
   </body>
 </html>
